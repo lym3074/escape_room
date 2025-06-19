@@ -1,4 +1,4 @@
-# Naver Automation with Playwright
+# 방탈출 매크로 with Playwright
 
 방탈출 사이트 예매 매크로 프로젝트입니다.
 
