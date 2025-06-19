@@ -59,4 +59,9 @@ jspm_packages/
 *.tgz
 
 # Yarn Integrity file
-.yarn-integrity 
+.yarn-integrity
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/

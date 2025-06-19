@@ -1,20 +1,23 @@
 {
   "name": "naver-automation",
   "version": "1.0.0",
-  "description": "Playwright를 사용한 네이버 자동화 프로젝트",
+  "description": "방탈출 예약 자동화 프로젝트",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "install-browsers": "npx playwright install",
     "test": "npx playwright test"
   },
-  "keywords": ["playwright", "automation", "naver"],
+  "keywords": [
+    "playwright",
+    "automation",
+    "naver"
+  ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "@playwright/test": "^1.40.0"
-  },
   "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.3",
     "playwright": "^1.40.0"
   }
-} 
+}
