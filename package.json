@@ -19,5 +19,8 @@
     "@playwright/test": "^1.53.1",
     "@types/node": "^24.0.3",
     "playwright": "^1.40.0"
+  },
+  "dependencies": {
+    "node-cron": "^4.1.0"
   }
 }
