@@ -1,7 +1,7 @@
 const { chromium } = require('playwright');
 const cron = require('node-cron');
 
-async function reservationBot() {
+async function reservationStart() {
   // 브라우저 실행 (headless: false로 설정해서 브라우저가 보이도록 함)
   const browser = await chromium.launch({ 
     headless: false,  // 브라우저 창을 보이게 함
@@ -70,7 +70,10 @@ console.log('⏰ 예약 봇 스케줄러가 시작되었습니다...');
 cron.schedule('0 0 * * *', () => {
   console.log('🎯 지정하신 자정입니다. 자동화를 시작합니다...');
 
-  reservationBot().catch(console.error);
+  setTimeout(() => {
+    reservationStart().catch(console.error);
+  }, 10); // 혹시 몰라 10ms 늘림
+  
 }, {
   timezone: "Asia/Seoul"
 });
